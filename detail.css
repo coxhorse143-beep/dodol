@@ -1,0 +1,678 @@
+/* =====================================
+   DETAIL PRODUK CUSTOMER
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+
+/* ============================
+   NAVBAR
+============================ */
+
+.navbar{
+
+    height:75px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+
+.logo i{
+
+    margin-right:8px;
+
+}
+
+
+
+.menu{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+
+.menu a:hover{
+
+    color:#2563eb;
+
+}
+
+
+
+/* ============================
+   PRODUCT DETAIL
+============================ */
+
+
+.product{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    padding:50px 8%;
+
+}
+
+
+/* ============================
+   GALLERY
+============================ */
+
+
+.gallery{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+.main-image{
+
+    width:100%;
+
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+.thumbnail{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+
+.thumbnail img{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.thumbnail img:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+/* ============================
+   INFO PRODUK
+============================ */
+
+
+.info{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+.info h1{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+
+.rating{
+
+    color:#f59e0b;
+
+    margin-bottom:25px;
+
+}
+
+
+.rating span{
+
+    color:#666;
+
+    margin-left:10px;
+
+}
+
+
+.price .old{
+
+    text-decoration:line-through;
+
+    color:#999;
+
+}
+
+
+.price h2{
+
+    color:#2563eb;
+
+    font-size:35px;
+
+    margin:5px 0 20px;
+
+}
+
+
+.voucher{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    margin-bottom:25px;
+
+}
+/* ============================
+   OPTION PRODUK
+============================ */
+
+.option{
+
+    margin-top:25px;
+
+}
+
+
+.option h3{
+
+    margin-bottom:12px;
+
+    font-size:17px;
+
+}
+
+
+.option button{
+
+    padding:10px 18px;
+
+    border:1px solid #ddd;
+
+    background:#fff;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    margin-right:8px;
+
+    transition:.3s;
+
+}
+
+
+.option button:hover{
+
+    border-color:#2563eb;
+
+    color:#2563eb;
+
+}
+
+
+
+/* ============================
+   QUANTITY
+============================ */
+
+
+.quantity{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+.quantity button{
+
+    width:40px;
+
+    height:40px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+}
+
+
+.quantity input{
+
+    width:60px;
+
+    height:40px;
+
+    text-align:center;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+}
+
+
+
+/* ============================
+   BUTTON AREA
+============================ */
+
+
+.button-area{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+
+.button-area button,
+.button-area a{
+
+    flex:1;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    border:none;
+
+    text-decoration:none;
+
+    text-align:center;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.cart{
+
+    background:#f59e0b;
+
+    color:#fff;
+
+}
+
+
+
+.buy{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+
+
+.cart:hover,
+.buy:hover{
+
+    transform:translateY(-3px);
+
+    opacity:.9;
+
+}
+
+
+
+/* ============================
+   DESKRIPSI
+============================ */
+
+
+.description,
+.review,
+.related{
+
+    margin:0 8% 40px;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.description h2,
+.review h2,
+.related h2{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.description p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+
+.specification{
+
+    margin-top:25px;
+
+}
+
+
+.specification ul{
+
+    margin-top:15px;
+
+    padding-left:20px;
+
+}
+
+
+.specification li{
+
+    margin:8px 0;
+
+}
+
+
+
+/* ============================
+   REVIEW
+============================ */
+
+
+.review-card{
+
+    border-bottom:1px solid #eee;
+
+    padding:20px 0;
+
+}
+
+
+.user{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+}
+
+
+.user i{
+
+    font-size:35px;
+
+    color:#2563eb;
+
+}
+
+
+.stars{
+
+    color:#f59e0b;
+
+    margin:10px 0;
+
+}
+
+
+
+/* ============================
+   PRODUK TERKAIT
+============================ */
+
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+
+.product-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+.product-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+.product-card img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+
+.product-card h3,
+.product-card p{
+
+    padding:10px 15px;
+
+}
+
+
+.product-card p{
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+
+@media(max-width:900px){
+
+
+.product{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.main-image{
+
+    height:350px;
+
+}
+
+
+.button-area{
+
+    flex-direction:column;
+
+}
+
+
+.navbar{
+
+    padding:0 20px;
+
+}
+
+
+.menu{
+
+    gap:10px;
+
+}
+
+
+}
+
+
+@media(max-width:500px){
+
+
+.menu a{
+
+    font-size:12px;
+
+}
+
+
+.info h1{
+
+    font-size:22px;
+
+}
+
+
+.price h2{
+
+    font-size:28px;
+
+}
+
+
+}
