@@ -1,0 +1,155 @@
+/* ==========================================
+   DASHBOARD ADMIN - PART 5A
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+    width:260px;
+    background:linear-gradient(180deg,#0f4c81,#2563eb);
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    padding:25px;
+    box-shadow:5px 0 20px rgba(0,0,0,.15);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo i{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.logo h2{
+    font-size:24px;
+    font-weight:600;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:12px 0;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#fff;
+    text-decoration:none;
+    padding:14px 16px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+    background:rgba(255,255,255,.18);
+}
+
+.sidebar i{
+    width:22px;
+    text-align:center;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.content{
+    margin-left:260px;
+    width:100%;
+    padding:30px;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.topbar h1{
+    font-size:30px;
+    color:#222;
+}
+
+.admin{
+    background:#fff;
+    padding:12px 20px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.admin i{
+    font-size:28px;
+    color:#2563eb;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.card h2{
+    font-size:28px;
+    color:#222;
+}
+
+.card p{
+    color:#777;
+    margin-top:8px;
+}
