@@ -66,6 +66,26 @@ Aktif
 
 
 <button 
+class="detail"
+onclick="detailData(${item.id})">
+
+<i class="fa fa-eye"></i>
+
+</button>
+
+
+
+<button 
+class="edit"
+onclick="editData(${item.id})">
+
+<i class="fa fa-pen"></i>
+
+</button>
+
+
+
+<button 
 class="hapus"
 onclick="hapusData(${item.id})">
 
@@ -159,3 +179,89 @@ tampilProduk(hasil);
 
 
 tampilProduk();
+function editData(id){
+
+
+let data =
+produk.find(item=>item.id==id);
+
+
+
+let nama =
+prompt(
+"Nama Barang",
+data.nama
+);
+
+
+
+let harga =
+prompt(
+"Harga Barang",
+data.harga
+);
+
+
+
+let stok =
+prompt(
+"Stok Barang",
+data.stok
+);
+
+
+
+let update = {
+
+
+id:data.id,
+
+nama:nama,
+
+kategori:data.kategori,
+
+harga:Number(harga),
+
+stok:Number(stok),
+
+gambar:data.gambar,
+
+deskripsi:data.deskripsi
+
+
+};
+
+
+
+updateProduk(
+id,
+update
+);
+
+
+
+alert(
+"Produk berhasil diubah"
+);
+
+
+
+tampilProduk();
+
+
+}
+function detailData(id){
+
+
+localStorage.setItem(
+"produkDetail",
+id
+);
+
+
+
+window.location.href=
+"detail.html";
+
+
+}
