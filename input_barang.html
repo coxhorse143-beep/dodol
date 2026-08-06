@@ -93,9 +93,10 @@ Logout
 
 <label>Nama Barang</label>
 
-<input
+<input 
 type="text"
-placeholder="Masukkan Nama Barang">
+id="nama"
+placeholder="Nama Barang">
 
 </div>
 
@@ -103,15 +104,14 @@ placeholder="Masukkan Nama Barang">
 
 <label>Kategori</label>
 
-<select>
+<select id="kategori">
 
 <option>Elektronik</option>
-
 <option>Fashion</option>
-
 <option>Makanan</option>
-
 <option>Olahraga</option>
+
+</select>
 
 <option>Lainnya</option>
 
@@ -127,9 +127,10 @@ placeholder="Masukkan Nama Barang">
 
 <label>Harga</label>
 
-<input
+<input 
 type="number"
-placeholder="Masukkan Harga">
+id="harga"
+placeholder="Harga Barang">
 
 </div>
 
@@ -137,8 +138,9 @@ placeholder="Masukkan Harga">
 
 <label>Stok</label>
 
-<input
+<input 
 type="number"
+id="stok"
 placeholder="Jumlah Stok">
 
 </div>
@@ -241,6 +243,8 @@ placeholder="Contoh 10">
 </div>
 
 </div>
+<script src="js/database.js"></script>
 
+<script src="js/produk.js"></script>
 </body>
 </html>
