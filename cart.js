@@ -78,3 +78,40 @@ alert(
 
 
 }
+function updateJumlahCart(){
+
+
+let jumlah =
+0;
+
+
+keranjang.forEach(item=>{
+
+
+jumlah += item.jumlah;
+
+
+});
+
+
+
+let tampil =
+document.getElementById(
+"jumlahCart"
+);
+
+
+
+if(tampil){
+
+tampil.innerHTML =
+jumlah;
+
+}
+
+
+}
+
+
+
+updateJumlahCart();
