@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard Admin</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<i class="fa-solid fa-store"></i>
+
+<h2>Admin Panel</h2>
+
+</div>
+
+<ul>
+
+<li class="active">
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="input-barang.html">
+
+<i class="fa-solid fa-box"></i>
+
+Input Barang
+
+</a>
+
+</li>
+
+<li>
+
+<a href="view-barang.html">
+
+<i class="fa-solid fa-table"></i>
+
+View Barang
+
+</a>
+
+</li>
+
+<li>
+
+<a href="laporan.html">
+
+<i class="fa-solid fa-chart-column"></i>
+
+Laporan
+
+</a>
+
+</li>
+
+<li>
+
+<a href="login.html">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="content">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<h1>Dashboard</h1>
+
+<div class="admin">
+
+<i class="fa-solid fa-circle-user"></i>
+
+<span>Administrator</span>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-box-open"></i>
+
+<h2>150</h2>
+
+<p>Total Produk</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<h2>420</h2>
+
+<p>Total Pesanan</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>98</h2>
+
+<p>Customer</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h2>Rp25.500.000</h2>
+
+<p>Pendapatan</p>
+
+</div>
+
+</div>
+<!-- ===========================
+     GRAFIK & AKTIVITAS
+=========================== -->
+
+<div class="dashboard-grid">
+
+    <!-- Grafik Penjualan -->
+
+    <div class="chart-box">
+
+        <h2>Grafik Penjualan</h2>
+
+        <div class="chart">
+
+            <div class="bar" style="height:70%;">
+                <span>Jan</span>
+            </div>
+
+            <div class="bar" style="height:45%;">
+                <span>Feb</span>
+            </div>
+
+            <div class="bar" style="height:90%;">
+                <span>Mar</span>
+            </div>
+
+            <div class="bar" style="height:65%;">
+                <span>Apr</span>
+            </div>
+
+            <div class="bar" style="height:95%;">
+                <span>Mei</span>
+            </div>
+
+            <div class="bar" style="height:80%;">
+                <span>Jun</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Aktivitas -->
+
+    <div class="activity">
+
+        <h2>Aktivitas Terbaru</h2>
+
+        <ul>
+
+            <li>🛒 Pesanan baru dari Andi.</li>
+
+            <li>📦 Produk "Sepatu Running" ditambahkan.</li>
+
+            <li>💳 Pembayaran QRIS berhasil.</li>
+
+            <li>🚚 Pesanan #1023 dikirim.</li>
+
+            <li>⭐ Customer memberikan rating 5.</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+     TABEL PESANAN
+=========================== -->
+
+<div class="table-box">
+
+    <h2>Pesanan Terbaru</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Customer</th>
+
+                <th>Produk</th>
+
+                <th>Total</th>
+
+                <th>Status</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>#1001</td>
+
+                <td>Hilal</td>
+
+                <td>Mouse Gaming</td>
+
+                <td>Rp350.000</td>
+
+                <td><span class="success">Selesai</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1002</td>
+
+                <td>Bintang</td>
+
+                <td>Keyboard RGB</td>
+
+                <td>Rp520.000</td>
+
+                <td><span class="pending">Diproses</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1003</td>
+
+                <td>Azam</td>
+
+                <td>Headset Gaming</td>
+
+                <td>Rp450.000</td>
+
+                <td><span class="success">Selesai</span></td>
+
+            </tr>
+
+            <tr>
+
+                <td>#1004</td>
+
+                <td>Zaqy</td>
+
+                <td>Monitor 24"</td>
+
+                <td>Rp1.950.000</td>
+
+                <td><span class="pending">Menunggu</span></td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
