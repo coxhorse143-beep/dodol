@@ -1,0 +1,509 @@
+/* ======================================
+   CHECKOUT CUSTOMER
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    height:75px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 8%;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+
+.logo i{
+
+    margin-right:8px;
+
+}
+
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:500;
+
+}
+
+
+
+/* ==========================
+   CONTAINER
+========================== */
+
+
+.checkout-container{
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr;
+
+    gap:25px;
+
+    padding:40px 8%;
+
+}
+
+
+
+/* ==========================
+   CARD
+========================== */
+
+
+.card,
+.summary{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+.card h2,
+.summary h2{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+    color:#222;
+
+}
+
+
+
+.card h2 i{
+
+    color:#2563eb;
+
+    margin-right:8px;
+
+}
+
+
+
+/* ==========================
+   FORM
+========================== */
+
+
+.form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.form label{
+
+    margin:10px 0 8px;
+
+    font-weight:600;
+
+}
+
+
+.form input,
+.form textarea{
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:14px;
+
+}
+
+
+.form textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+.form input:focus,
+.form textarea:focus{
+
+    border-color:#2563eb;
+
+}
+
+
+
+/* ==========================
+   PRODUCT
+========================== */
+
+
+.product{
+
+    display:flex;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+
+.product img{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+}
+
+
+.product h3{
+
+    margin-bottom:10px;
+
+}
+
+
+.product b{
+
+    color:#2563eb;
+
+}
+
+
+
+/* ==========================
+   RADIO
+========================== */
+
+
+.radio{
+
+    display:block;
+
+    padding:12px;
+
+    border:1px solid #eee;
+
+    border-radius:10px;
+
+    margin-bottom:12px;
+
+    cursor:pointer;
+
+}
+
+
+.radio:hover{
+
+    border-color:#2563eb;
+
+}
+
+
+.radio input{
+
+    margin-right:10px;
+
+}
+/* ==========================
+   SUMMARY
+========================== */
+
+.summary{
+
+    position:sticky;
+
+    top:20px;
+
+    height:max-content;
+
+}
+
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:15px 0;
+
+    color:#666;
+
+}
+
+
+.row b{
+
+    color:#333;
+
+}
+
+
+.summary hr{
+
+    border:none;
+
+    border-top:1px solid #eee;
+
+    margin:20px 0;
+
+}
+
+
+
+.total{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.total span{
+
+    font-weight:600;
+
+}
+
+
+.total h2{
+
+    color:#2563eb;
+
+    font-size:28px;
+
+}
+
+
+
+/* ==========================
+   PAY BUTTON
+========================== */
+
+
+.pay{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:17px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+    );
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.pay i{
+
+    margin-right:8px;
+
+}
+
+
+.pay:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 12px 25px rgba(37,99,235,.35);
+
+}
+
+
+
+/* ==========================
+   ANIMATION
+========================== */
+
+
+.card,
+.summary{
+
+    animation:show .6s ease;
+
+}
+
+
+@keyframes show{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+
+@media(max-width:900px){
+
+
+.checkout-container{
+
+    grid-template-columns:1fr;
+
+    padding:25px;
+
+}
+
+
+.summary{
+
+    position:relative;
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+.navbar{
+
+    padding:0 20px;
+
+}
+
+
+.logo{
+
+    font-size:20px;
+
+}
+
+
+.card,
+.summary{
+
+    padding:20px;
+
+}
+
+
+.product{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+
+.total h2{
+
+    font-size:22px;
+
+}
+
+
+}
