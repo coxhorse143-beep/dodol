@@ -39,9 +39,10 @@ Rp ${item.harga.toLocaleString()}
 
 
 
+
 <p>
 
-⭐ ⭐ ⭐ ⭐ ⭐
+⭐ ${item.rating || 5}
 
 </p>
 
