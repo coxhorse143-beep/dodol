@@ -131,3 +131,193 @@ body{
     color:#333;
 
 }
+/* ======================================
+   INPUT, SELECT & TEXTAREA
+====================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+    padding:14px 16px;
+
+    border:1px solid #dcdcdc;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:#fff;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 12px rgba(37,99,235,.2);
+
+}
+
+textarea{
+
+    resize:vertical;
+    min-height:150px;
+
+}
+
+input[type="file"]{
+
+    padding:12px;
+    cursor:pointer;
+
+}
+
+/* ======================================
+   BUTTON
+====================================== */
+
+.button-group{
+
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+
+}
+
+.button-group button,
+.button-group a{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.save{
+
+    background:#2563eb;
+    color:#fff;
+
+}
+
+.save:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-3px);
+
+}
+
+.reset{
+
+    background:#f59e0b;
+    color:#fff;
+
+}
+
+.reset:hover{
+
+    background:#d97706;
+    transform:translateY(-3px);
+
+}
+
+.back{
+
+    background:#6b7280;
+    color:#fff;
+
+}
+
+.back:hover{
+
+    background:#4b5563;
+    transform:translateY(-3px);
+
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media(max-width:768px){
+
+    .sidebar{
+
+        width:80px;
+        padding:20px 10px;
+
+    }
+
+    .logo h2{
+
+        display:none;
+
+    }
+
+    .sidebar a{
+
+        justify-content:center;
+        font-size:0;
+
+    }
+
+    .sidebar a i{
+
+        font-size:20px;
+
+    }
+
+    .content{
+
+        margin-left:80px;
+        padding:20px;
+
+    }
+
+    .row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+    .button-group button,
+    .button-group a{
+
+        justify-content:center;
+
+    }
+
+}
