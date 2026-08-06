@@ -270,5 +270,26 @@ placeholder="Contoh 10">
 cekLogin();
 
 </script>
+
+<script>
+
+let gambar =
+document.getElementById("gambar");
+
+
+let preview =
+document.getElementById("preview");
+
+
+
+gambar.addEventListener(
+"input",
+function(){
+
+preview.src=this.value;
+
+});
+
+</script>
 </body>
 </html>
